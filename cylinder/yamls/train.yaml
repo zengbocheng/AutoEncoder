@@ -1,0 +1,44 @@
+# random seed
+random_seed: 66
+
+# data precision
+precision: float32
+
+# super parameters
+learning_rate: 1.0e-3
+start_epoch: 1
+epochs: 1000
+batch_size: 32
+num_workers: 4
+window_shuffle: true
+
+tr_time_window: 1
+tr_n_data: 27
+val_time_window: 1
+val_n_data: 200
+te_time_window: 200
+te_n_data: 8
+
+print_freq: 2
+save_freq: 5
+eval_freq: 5
+
+
+# network architecture
+n_embed: 128
+embed_drop: 0.0
+layer_norm_eps: 1.0e-5
+
+# experiment name and path
+experiment_name: 'ConvAE_4'
+continuous_train: false
+tr_ckpt_path: 'ckpts/ckpt-{}-tr.pt'
+val_ckpt_path: 'ckpts/ckpt-{}-val.pt'
+
+# data path
+train_file: 'data/cylinder_training.hdf5'
+val_file: 'data/cylinder_valid.hdf5'
+
+# log
+log_file: 'logs/{}.log'
+tensorboard_dir: 'runs/expr_{}'

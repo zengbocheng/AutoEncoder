@@ -1,0 +1,13 @@
+__pycache__/
+
+data/
+
+logs/
+
+ckpts/
+
+figs/
+
+out/
+
+runs/
